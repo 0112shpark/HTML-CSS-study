@@ -1,0 +1,139 @@
+<!--form-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>form practice</title>
+  </head>
+  <body>
+    <!--action에는 연결할 URL(Enter입력시), method에는 보안형식-->
+    <!--label tag로 묶을 수 있습니다.-->
+    <!--input의 id속성과 label의 for속성이 같아야합니다.-->
+    <!--for과 id속성을 사용하지 않아도 됩니다.-->
+    <form action="#" method="get">
+      <!--한줄 입력-->
+      <fieldset>
+        <label>로그인</label>
+        <label>
+          <strong>ID</strong>
+          <input type="text" name="text" /><br />
+        </label>
+        <!--비밀번호 입력-->
+        <label for="password">
+          <strong>비밀번호</strong>
+          <input type="password" name="pwd" id="password" /><br />
+        </label>
+        <!--초기화-->
+        <button type="reset">초기화</button>
+        <button type="submit">로그인</button><br />
+      </fieldset>
+      <!--전화번호, 숫자, 이메일, 주소, 검색용 텍스트-->
+      <fieldset>
+        <label>개인정보</label>
+        <label>
+          <strong>전화번호</strong>
+          <input type="tel" name="phone" /><br />
+        </label>
+        <label>
+          <strong>number</strong>
+          <input type="number" name="number" /><br />
+        </label>
+        <label>
+          <strong>Email</strong>
+          <input type="email" name="email" /><br />
+        </label>
+        <label>
+          <strong>URL</strong>
+          <input type="url" name="url" /><br />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>기타요소</label>
+        <label>
+          <strong>search</strong>
+          <input type="search" name="search" /><br />
+        </label>
+        <label>
+          <!--숨겨진 요소-->
+          <strong></strong>
+          <input type="hidden" name="hidden" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>댓글 달기</label>
+        <p>
+          <label>
+            <strong>제목</strong>
+            <input type="text" name="text1" />
+          </label>
+        </p>
+        <!--여러줄의 text입력-->
+
+        <p>
+          <label>
+            <strong>내용삽입</strong>
+            <textarea></textarea>
+          </label>
+        </p>
+        <button type="submit">댓글달기</button>
+      </fieldset>
+
+      <fieldset>
+        <!--상호작용 요소-->
+        <label>
+          <strong>체크박스 - 중복가능</strong>
+          <input type="checkbox" name="checkbox" /><br />
+        </label>
+        <label>
+          <strong>radio - 1개만 선택</strong>
+          <input type="radio" name="radio" /><br />
+        </label>
+        <label>
+          <strong>업로드</strong>
+          <input type="file" name="file" /><br />
+        </label>
+        <label>
+          <strong>img button</strong>
+          <input
+            type="image"
+            name="image-button"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/A_squirrel_in_South_Korea.jpg/375px-A_squirrel_in_South_Korea.jpg"
+          />
+          <br />
+        </label>
+        <label>
+          <strong>색깔</strong>
+          <input type="color" name="color" /><br />
+        </label>
+        <label>
+          <strong>숫자 선택</strong>
+          <input type="range" name="range" /><br />
+        </label>
+      </fieldset>
+      <fieldset>
+        <!--날짜 선택-->
+        <label>날짜 지정요소</label>
+        <label>
+          <strong>날짜선택</strong>
+          <input type="date" name="date" /><br />
+        </label>
+        <label>
+          <strong>사용자 시간대 날짜선택</strong>
+          <input type="datetime-local" name="datetime-local" /><br />
+        </label>
+        <label>
+          <strong>연 월 선택</strong>
+          <input type="month" name="month" /><br />
+        </label>
+        <label>
+          <strong>연 주차 선택</strong>
+          <input type="week" name="week" /><br />
+        </label>
+        <label>
+          <strong>시간선택</strong>
+          <input type="time" name="time" /><br />
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
