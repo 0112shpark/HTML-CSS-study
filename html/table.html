@@ -1,0 +1,58 @@
+<!--표 만들기-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>table practice</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <!--table tag로 표를 생성합니다.-->
+    <table>
+      <!--caption은 제목입니다.-->
+      <caption>
+        <strong>표 만들기</strong>
+      </caption>
+      <!--tr은 row, td는 데이터, th는 제목을 나타냅니다.-->
+      <tr>
+        <th>구분</th>
+        <th>이름</th>
+        <th>종류</th>
+        <th>가격</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>청설모</td>
+        <td>동물</td>
+        <td>$30</td>
+      </tr>
+      <tr>
+        <!--rowspan으로 행을 병합합니다.-->
+        <td>2</td>
+        <td>사슴</td>
+        <td>동물</td>
+        <td rowspan="2">$900</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>고양이</td>
+        <td>고양이과</td>
+      </tr>
+      <tr>
+        <!--colspan으로 열을 병합합니다.-->
+        <td>총 금액</td>
+        <td colspan="2">$1830</td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
