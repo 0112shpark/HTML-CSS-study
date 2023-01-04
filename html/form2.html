@@ -1,1 +1,88 @@
 <!--more form -->
+<!--select tag-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>form2-practice</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>지역정보 입력</legend>
+        지역을 선택하세요.
+        <p>
+          <label for="region">
+            <!--value는 서버에 넘어가는 값의 이름입니다.-->
+            <select name="region" id="region">
+              <option value="seoul">서울</option>
+              <option value="incheon">인천</option>
+              <option value="kyunggido">경기도</option>
+              <option value="busan">부산</option>
+              <option value="deajeon">대전</option>
+            </select>
+          </label>
+        </p>
+        <lable>
+          <button type="submit">제출하기</button>
+        </lable>
+      </fieldset>
+    </form>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>지역정보 입력</legend>
+        지역을 선택하세요.
+        <p>
+          <label for="region">
+            <!--optgroup tag로 grouping이 가능합니다.-->
+            <!-- size로 한번에 노출되는 갯수를 설정합니다.-->
+            <!--selected로 초기값을 설정합니다.-->
+            <select name="region" id="region" size="5">
+              <optgroup label="위쪽">
+                <option value="seoul">서울</option>
+                <option value="incheon">인천</option>
+                <option value="kyunggido">경기도</option>
+              </optgroup>
+              <optgroup label="아래쪽">
+                <option value="busan" selected>부산</option>
+                <option value="deajeon">대전</option>
+              </optgroup>
+            </select>
+          </label>
+        </p>
+        <lable>
+          <button type="submit">제출하기</button>
+        </lable>
+      </fieldset>
+    </form>
+    <!--몇가지 추가기능-->
+    <!--disable: 비활성화-->
+    <!--readonly: 읽기전용-->
+    <!--maxlength: 최대 글자수 제한-->
+    <!--checked: check box에서 초기값을 선택-->
+    <!--placeholder: 입력값 힌트-->
+    <form action="#" , method="get">
+      <fieldset>
+        <legend>추가기능</legend>
+        제목을 입력하세요.
+        <p>
+          <label>
+            <input type="text" disabled placeholder="비활성회된 영역입니다." />
+          </label>
+        </p>
+        내용을 입력하세요
+        <p>
+          <label>
+            <textarea name="description" readonly>읽기전용입니다.</textarea>
+          </label>
+        </p>
+        비밀번호를 설정하세요.(최대 4자리)
+        <p>
+          <label for="password">
+            <input type="password" id="password" maxlength="4" />
+          </label>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
