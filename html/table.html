@@ -54,5 +54,54 @@
         <td></td>
       </tr>
     </table>
+    <!--thead, tfoot, tbody 사용하기-->
+    <table>
+      <caption>
+        표만들기 2
+      </caption>
+      <!--colgroup은 cell을 병합합니다.-->
+      <!--col style ="width: **px"를 사용해도 됩니다.-->
+      <!--colgroup span ="*"-->
+      <colgroup>
+        <col width="10%" />
+        <col width="30%" />
+        <col width="40%" />
+        <col width="20%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">구분</th>
+          <th scope="col">이름</th>
+          <th scope="col">종류</th>
+          <th scope="col">가격</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th scope="row">총 가격</td>
+          <td colspan="3">$1800</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>청설모</td>
+          <td>동물</td>
+          <td>$30</td>
+        </tr>
+        <tr>
+          <!--rowspan으로 행을 병합합니다.-->
+          <td>2</td>
+          <td>사슴</td>
+          <td>동물</td>
+          <td rowspan="2">$900</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>고양이</td>
+          <td>고양이과</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
