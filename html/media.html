@@ -1,0 +1,156 @@
+<!--멀티미디어 설정하기-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>media</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="audio file format">
+      <table>
+        <caption>
+          <h2>브라우저별 지원하는 오디오파일 포맷</h2>
+        </caption>
+        <col style="width: 200px" />
+        <colgroup span="3" style="width: 100px"></colgroup>
+        <tr>
+          <th scope="col">웹 브라우저</th>
+          <th scope="col">MP3</th>
+          <th scope="col">WAV</th>
+          <th scope="col">OGG</th>
+        </tr>
+        <tr>
+          <th scope="row">인터넷 익스플로러(IE)</th>
+          <td rowspan="6">지원</td>
+          <td>미지원</td>
+          <td>미지원</td>
+        </tr>
+        <tr>
+          <th scope="row">엣지(Edge)</th>
+          <td colspan="2">지원</td>
+        </tr>
+        <tr>
+          <th scope="row">크롬(Chrome)</th>
+          <td colspan="2">지원</td>
+        </tr>
+        <tr>
+          <th scope="row">파이어폭스(Firefox)</th>
+          <td colspan="2">지원</td>
+        </tr>
+        <tr>
+          <th scope="row">사파리(Safari)</th>
+          <td>지원</td>
+          <td>미지원</td>
+        </tr>
+        <tr>
+          <th scope="row">오페라(Opera)</th>
+          <td colspan="2">지원</td>
+        </tr>
+      </table>
+      <table>
+        <caption>
+          <h3>오디오 파일 포맷별 미디어 타입</h3>
+        </caption>
+        <colgroup span="2" style="width: 150px"></colgroup>
+        <tr>
+          <th scope="col">파일 포맷</th>
+          <th scope="col">미디어 타입</th>
+        </tr>
+        <tr>
+          <td>MP3</td>
+          <td>audio/mpeg</td>
+        </tr>
+        <tr>
+          <td>WAV</td>
+          <td>audio/WAV</td>
+        </tr>
+        <tr>
+          <td>OGG</td>
+          <td>audio/ogg</td>
+        </tr>
+      </table>
+    </div>
+    <!--audio 사용법-->
+    <audio src="#" controls></audio>
+
+    <div class="video file format">
+      <table>
+        <caption>
+          <h2>브라우저별 지원하는 비디오파일 포맷</h2>
+        </caption>
+        <col style="width: 200px" />
+        <colgroup span="3" style="width: 100px"></colgroup>
+        <tr>
+          <th scope="col">웹 브라우저</th>
+          <th scope="col">MP4</th>
+          <th scope="col">WebM</th>
+          <th scope="col">Ogg</th>
+        </tr>
+        <tr>
+          <th scope="row">인터넷 익스플로러(IE)</th>
+          <td rowspan="6">지원</td>
+          <td>미지원</td>
+          <td>미지원</td>
+        </tr>
+        <tr>
+          <th scope="row">엣지(Edge)</th>
+          <td colspan="2">지원</td>
+        </tr>
+        <tr>
+          <th scope="row">크롬(Chrome)</th>
+          <td colspan="2">지원</td>
+        </tr>
+        <tr>
+          <th scope="row">파이어폭스(Firefox)</th>
+          <td colspan="2">지원</td>
+        </tr>
+        <tr>
+          <th scope="row">사파리(Safari)</th>
+          <td>지원</td>
+          <td>미지원</td>
+        </tr>
+        <tr>
+          <th scope="row">오페라(Opera)</th>
+          <td colspan="2">지원</td>
+        </tr>
+      </table>
+      <table>
+        <caption>
+          <h3>오디오 파일 포맷별 미디어 타입</h3>
+        </caption>
+        <colgroup span="2" style="width: 150px"></colgroup>
+        <tr>
+          <th scope="col">파일 포맷</th>
+          <th scope="col">미디어 타입</th>
+        </tr>
+        <tr>
+          <td>MP4</td>
+          <td>video/mp4</td>
+        </tr>
+        <tr>
+          <td>Webm</td>
+          <td>video/Webm</td>
+        </tr>
+        <tr>
+          <td>Ogg</td>
+          <td>video/ogg</td>
+        </tr>
+      </table>
+    </div>
+    <!--video 사용법-->
+    <video src="#" controls></video>
+    <video controls>
+      <source src="#" type="#" />
+    </video>
+  </body>
+</html>
