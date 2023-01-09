@@ -1,1 +1,1 @@
-##Using external style sheet for comfort.
+## Using external style sheet for comfort
