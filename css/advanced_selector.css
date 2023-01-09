@@ -1,0 +1,29 @@
+h1 {
+  color: red;
+}
+.조합 dt {
+  color: blue;
+}
+.조합 dd::before {
+  content: "설명:";
+  color: blueviolet;
+}
+.조합 dd {
+  color: brown;
+}
+button:hover {
+  color: hotpink;
+}
+a[href]:active,
+a[href]:hover {
+  color: darkgreen;
+}
+table #name {
+  color: red;
+}
+.number {
+  color: blue;
+}
+td {
+  color: aqua;
+}

@@ -5,6 +5,16 @@
     <title>advanced_selector</title>
     <link rel="stylesheet" href="advanced_selector.css" />
   </head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+  </style>
   <body>
     <h1>조합선택자 사용해보기</h1>
     <div class="조합">
@@ -35,11 +45,40 @@
             />
           </label>
         </p>
-        <button type="submit">
-          <img src="./icons/user.png" title="login icons" />로그인
-        </button>
-        <button type="reset">재입력</button>
+        <div class="button">
+          <button type="submit">
+            <img
+              src="./icons/user.png"
+              title="login icons"
+              class="login button"
+              width="13px"
+              height="13px"
+            />로그인
+          </button>
+          <button type="reset">재입력</button>
+        </div>
       </fieldset>
     </form>
+    <h2>링크입니다.</h2>
+    <a href="https://www.naver.com" target="_blank">네이버 바로가기</a>
+    <div class="flower">
+      <table>
+        <tr id="name">
+          <th scope="col">번호</th>
+          <th scope="col">이름</th>
+        </tr>
+        <tr>
+          <td class="number">1</td>
+          <td>장미</td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="number">2</td>
+          <td>해바라기</td>
+        </tr>
+        <tr>
+          <td>개나리</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
