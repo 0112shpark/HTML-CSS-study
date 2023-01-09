@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>advanced_selector</title>
+    <link rel="stylesheet" href="advanced_selector.css" />
+  </head>
+  <body>
+    <h1>조합선택자 사용해보기</h1>
+    <div class="조합">
+      <dt>
+        <strong>조합선택자</strong>
+      </dt>
+      <dd>
+        <p>
+          조합선택자는 기본 선택자와 함께 사용했을 때 선택자의 의미를 더
+          풍부하게 해 주는 선택자입니다.
+        </p>
+      </dd>
+    </div>
+    <form action="#" , method="get">
+      <fieldset>
+        <legend>로그인하기</legend>
+        <p>
+          <label for="id">
+            <input type="text" placeholder="아이디를 입력하세요." id="id" />
+          </label>
+        </p>
+        <p>
+          <label for="passw">
+            <input
+              type="password"
+              placeholder="비밀번호를 입력하세요."
+              id="passw"
+            />
+          </label>
+        </p>
+        <button type="submit">
+          <img src="./icons/user.png" title="login icons" />로그인
+        </button>
+        <button type="reset">재입력</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

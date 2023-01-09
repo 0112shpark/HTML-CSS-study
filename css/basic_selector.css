@@ -28,7 +28,6 @@ a:visited {
 a[target=" _blank"] {
   color: blue;
 }
-
 /* class와 id를 같이 사용해서 선택자로 사용할 수 있습니다.*/
 .vegetables[href] {
   color: darkslateblue;
