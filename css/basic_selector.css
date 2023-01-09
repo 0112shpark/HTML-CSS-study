@@ -1,0 +1,38 @@
+/*h2 태그에만 색깔을 적용합니다.*/
+h2 {
+  color: coral;
+}
+
+/*class 별로 따로 적용합니다*/
+.fruits {
+  color: darkblue;
+}
+.jeajin {
+  color: blueviolet;
+}
+/* id별로 따로 적용합니다*/
+#id1 {
+  color: darkgoldenrod;
+}
+a:link {
+  color: black;
+}
+
+/*태그와 속성을 지정할 수 있습니다.*/
+a[href] {
+  color: red;
+}
+a:visited {
+  color: purple;
+}
+a[target=" _blank"] {
+  color: blue;
+}
+
+/* class와 id를 같이 사용해서 선택자로 사용할 수 있습니다.*/
+.vegetables[href] {
+  color: darkslateblue;
+}
+#hello {
+  color: lightgreen;
+}
