@@ -25,5 +25,7 @@ table #name {
   color: blue;
 }
 td {
-  color: aqua;
+  /*class 선택자가 태그 선택자보다 우선순위입니다.*/
+  /* !important;를 넣어 최우선 순위로 지정할 수 있습니다.*/
+  color: aqua !important;
 }
