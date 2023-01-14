@@ -1,1 +1,72 @@
 <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>boxmodel</title>
+    <link rel="stylesheet" href="boxmodel.css" />
+  </head>
+  <body>
+    <h3>margin</h3>
+    <div class="margin">
+      margin<ins>(20px)</ins>은 가장 바깥부분을 의미합니다. <br />
+      margin은 겹칠 경우, 더 큰 margin이 적용됩니다.
+    </div>
+    <div class="margin1">
+      아래 margin<del>(20px)</del>(25px)입니다. <br />
+      margin은 top right bottom left순서입니다.
+    </div>
+    <h3>border</h3>
+    각 속성에 따른 결과입니다.<br />
+    <span id="title"> border: border-width border style color </span>
+    형식입니다.<br />
+    <div class="border">
+      <ul>
+        <li id="none">none</li>
+        <li id="hidden">hidden</li>
+        <li id="solid">solid</li>
+        <li id="double">double</li>
+        <li id="dotted">dotted</li>
+        <li id="dashed">dashed</li>
+        <li id="groove">groove</li>
+        <li id="ridge">ridge</li>
+        <li id="inset">inset</li>
+        <li id="outset">outset</li>
+      </ul>
+    </div>
+    <h3>padding</h3>
+    border은 안쪽입니다.<br />
+    형식은 margin과 같습니다.<br />
+    <div class="padding">
+      <h4>padding 10을 설정했습니다.</h4>
+      <ul>
+        <li id="none">none</li>
+        <li id="hidden">hidden</li>
+        <li id="solid">solid</li>
+        <li id="double">double</li>
+        <li id="dotted">dotted</li>
+        <li id="dashed">dashed</li>
+        <li id="groove">groove</li>
+        <li id="ridge">ridge</li>
+        <li id="inset">inset</li>
+        <li id="outset">outset</li>
+      </ul>
+    </div>
+    <h3>contents</h3>
+    <h4>
+      inline-block이라도 inline의 속성를 가지고 있기 때문에<br />
+      text를 수평으로 맞춥니다.
+    </h4>
+    <div class="contents">
+      200*200 입니다.<br />
+      inline-block형태는 콘텐츠의 크기만큼 사용합니다.
+    </div>
+    <div class="content-box">
+      200*200 입니다.<br />
+      content-box속성입니다. content영역만 계산됩니다.
+    </div>
+    <div class="border-box">
+      200*200 입니다.<br />
+      border-box속성입니다. border영역까지 사용합니다.
+    </div>
+  </body>
+</html>

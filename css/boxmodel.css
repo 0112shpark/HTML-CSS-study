@@ -1,0 +1,86 @@
+h3 {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.margin {
+  margin: 20px;
+}
+.margin1 {
+  margin: 25px;
+}
+.border li {
+  margin: 2px;
+}
+.padding li {
+  padding: 10px;
+}
+#title::after {
+  content: ">";
+}
+#title::before {
+  content: "<";
+}
+#none {
+  border-width: 2px;
+  border-style: none;
+}
+#hidden {
+  border-width: 2px;
+  border-style: hidden;
+}
+#solid {
+  border-width: 2px;
+  border-style: solid;
+}
+#double {
+  border-width: 2px;
+  border-style: double;
+}
+#dotted {
+  border-width: 2px;
+  border-style: dotted;
+}
+#dashed {
+  border-width: 2px;
+  border-style: dashed;
+}
+#groove {
+  border-width: 2px;
+  border-style: groove;
+}
+#ridge {
+  border-width: 2px;
+  border-style: ridge;
+}
+#inset {
+  border-width: 2px;
+  border-style: inset;
+}
+#outset {
+  border-width: 2px;
+  border-style: outset;
+}
+.contents {
+  width: 200px;
+  height: 200px;
+  border: 2px solid;
+  text-align: center;
+  display: inline-block;
+}
+.content-box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid;
+  text-align: center;
+  display: inline-block;
+  box-sizing: content-box;
+}
+.border-box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
