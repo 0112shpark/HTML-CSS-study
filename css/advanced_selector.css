@@ -14,6 +14,9 @@ h1 {
 button:hover {
   color: hotpink;
 }
+button:active {
+  background-color: blue;
+}
 a[href]:active,
 a[href]:hover {
   color: darkgreen;

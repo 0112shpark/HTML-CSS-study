@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>position</title>
+    <link rel="stylesheet" href="position.css" />
+  </head>
+  <body>
+    <ul>
+      <strong>position속성</strong
+      ><br />
+      <li>static: 기본값</li>
+      <li>relative</li>
+      <div class="relative">지정한 요소의 위치가 기준점이 됩니다.</div>
+      <div class="box red-rel"></div>
+      <div class="box green-rel">left 100px입니다.</div>
+      <div class="box blue-rel">bottom 70px입니다.</div>
+      <p>
+        초록색 박스는 왼쪽을 기준으로 100px이동했습니다.<br />
+        파란색 박스는 아래를 기준으로 70px이동했습니다. left를 사용하면
+        오른쪽으로, right는 왼쪽, top은 아래, bottom은 위로 이동합니다.
+      </p>
+      <li>absolute</li>
+      <div class="absolute">
+        웹사이트의 상단이나 상위요소를 기준으로 좌표계를 선택합니다.
+      </div>
+    </ul>
+    <div class="box red-abs"></div>
+    <div class="box green-abs">left 100px입니다.</div>
+    <div class="box blue-abs">bottom 70px입니다.</div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>
+      absolute는 margin을 무시합니다. 그러므로 박스가 겹쳐보입니다. <br />
+      또한 left right속성만 줄 경우 원래 위치에서 이동합니다.<br />
+      비어있는 위치는 비어있는 공간으로 인식됩니다.
+    </p>
+    <div class="box fixed">광고</div>
+    <p>fixed속성은 margin 제외 웹페이지를 기준으로 좌표를 정렬합니다.</p>
+    <div class="box sticky">광고 둘</div>
+    <p>
+      sticky 속성은 지정한 위치까지는 static으로 작동하지만 지정된 위치에서는
+      fixed로 동작합니다.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mnemonic check make</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .check_wrap {
+        position: relative;
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        border-radius: 0%;
+        border: 10px solid #000;
+      }
+      .check_wrap label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(http://image.goodpeople.co.kr/goodpeople/web/sns/check_select.png)
+          no-repeat 50% 50%;
+        border-radius: 0%;
+      }
+      .check_wrap label input[type="checkbox"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        border-radius: 0%;
+      }
+      .check_wrap label span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 0%;
+        font-size: 40px;
+        color: #000;
+        font-family: "Lato";
+        text-align: center;
+        line-height: 180px;
+        text-indent: -9999em;
+        border-radius: 0%;
+      }
+      .check_wrap label input[type="checkbox"]:checked + span {
+        background-color: rgb(34, 237, 255);
+        text-indent: 0;
+      }
+      .check_wrap label input[type="checkbox"] + span {
+        background-color: #fff;
+        text-indent: 0;
+      }
+
+      .button_wrap {
+        position: relative;
+        left: 35%;
+        float: left;
+        width: 30%;
+        height: 100px;
+        margin: 20px;
+        border-radius: 0%;
+        border: 10px solid #fff;
+      }
+
+      .text_wrap {
+        position: relative;
+        top: 30px;
+        left: 5%;
+        float: left;
+        width: 90%;
+        height: 80px;
+        margin: 20px;
+        border-radius: 0%;
+        border: 10px solid #fff;
+      }
+      .text_wrap label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(http://image.goodpeople.co.kr/goodpeople/web/sns/check_select.png)
+          no-repeat 50% 50%;
+        border-radius: 0%;
+      }
+      .text_wrap label span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 0%;
+        font-size: 50px;
+        color: #000;
+        font-family: "Lato";
+        text-align: center;
+        line-height: 10px;
+        text-indent: 0;
+        border-radius: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var Tot = 0;
+      function mnemonic_check() {
+        if (Tot == 12) {
+          var sum = 0;
+          var $Tc;
+          var $Ac;
+
+          $Tc = $("label[for='chk_fb1']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[0]) sum++;
+
+          $Tc = $("label[for='chk_fb2']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[1]) sum++;
+
+          $Tc = $("label[for='chk_fb3']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[2]) sum++;
+
+          $Tc = $("label[for='chk_fb4']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[3]) sum++;
+
+          $Tc = $("label[for='chk_fb5']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[4]) sum++;
+
+          $Tc = $("label[for='chk_fb6']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[5]) sum++;
+
+          $Tc = $("label[for='chk_fb7']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[6]) sum++;
+
+          $Tc = $("label[for='chk_fb8']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[7]) sum++;
+
+          $Tc = $("label[for='chk_fb9']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[8]) sum++;
+
+          $Tc = $("label[for='chk_fb10']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[9]) sum++;
+
+          $Tc = $("label[for='chk_fb11']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[10]) sum++;
+
+          $Tc = $("label[for='chk_fb12']");
+          $Ac = $Tc.find(".select_num");
+          if ($Ac.text() == num[11]) sum++;
+
+          if (sum == 12) {
+            alert("성공!");
+          } else alert("Mnemonic 문구가 순서대로 선택되지 않았습니다.");
+        } else alert("모든 칸을 선택하지 않았습니다.");
+      }
+    </script>
+
+    <div class="text_wrap">
+      <label for="text_1">
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb1">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb1"
+          class="ip_check"
+          value="1"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb2">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb2"
+          class="ip_check"
+          value="2"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb3">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb3"
+          class="ip_check"
+          value="3"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb4">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb4"
+          class="ip_check"
+          value="4"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb5">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb5"
+          class="ip_check"
+          value="5"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb6">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb6"
+          class="ip_check"
+          value="6"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb7">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb7"
+          class="ip_check"
+          value="7"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb8">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb8"
+          class="ip_check"
+          value="8"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb9">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb9"
+          class="ip_check"
+          value="9"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb10">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb10"
+          class="ip_check"
+          value="10"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb11">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb11"
+          class="ip_check"
+          value="11"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="check_wrap">
+      <label for="chk_fb12">
+        <input
+          type="checkbox"
+          name="faceSelect"
+          id="chk_fb12"
+          class="ip_check"
+          value="12"
+        />
+        <span class="select_num"></span>
+      </label>
+    </div>
+
+    <div class="button_wrap">
+      <p align="center">
+        <input
+          type="button"
+          style="
+            background-color: rgb(222, 176, 245);
+            font-size: 30px;
+            width: 350px;
+            height: 100px;
+          "
+          value="완료"
+          onclick="mnemonic_check()"
+        />
+      </p>
+    </div>
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"
+    >
+
+      var A = ['increase','b','c','d','e','f','g','h','i','j','k','l'];
+      var num = [1,2,3,4,5,6,7,8,9,10,11,12];
+
+      for(var t = 0 ; t < 1000 ; t++)
+      {
+          var p = Math.round( Math.random()*11 );
+          var q = Math.round( Math.random()*11 );
+
+          var Cnt = A[p];
+          A[p] = A[q];
+          A[q] = Cnt;
+
+          var mid = num[p];
+          num[p] = num[q];
+          num[q] = mid;
+
+      }
+
+
+
+      $(document).ready(function () {
+
+          $('body').on('click',  ".check_wrap", function(){
+              var $this = $(this);
+              countChecked($this);
+          });
+
+          var totalCount = 0;
+          var maxCount = 12;
+          var selectArray = [];
+
+          $.getJSON('/storage.json',function(data)
+          {
+              $.each(data, function(i,item){
+                  console.log(item.users.length);
+                  for(var num = 0 ; num < item.users.length ; num++)
+                  {
+                      A[num] = item.users[num].word;
+                  }
+              });
+          });
+
+
+          var $thisCh;
+          var $Ct;
+
+          $thisCh = $("label[for='text_1']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text("Mnemonic 문자를 순서대로 선택해주세요");
+
+          $thisCh = $("label[for='chk_fb1']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[0]);
+
+          $thisCh = $("label[for='chk_fb2']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[1]);
+
+          $thisCh = $("label[for='chk_fb3']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[2]);
+
+          $thisCh = $("label[for='chk_fb4']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[3]);
+
+          $thisCh = $("label[for='chk_fb5']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[4]);
+
+          $thisCh = $("label[for='chk_fb6']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[5]);
+
+          $thisCh = $("label[for='chk_fb7']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[6]);
+
+          $thisCh = $("label[for='chk_fb8']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[7]);
+
+          $thisCh = $("label[for='chk_fb9']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[8]);
+
+          $thisCh = $("label[for='chk_fb10']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[9]);
+
+          $thisCh = $("label[for='chk_fb11']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[10]);
+
+          $thisCh = $("label[for='chk_fb12']");
+          $Ct = $thisCh.find('.select_num');
+          $Ct.text(A[11]);
+
+
+
+          function countChecked( $this ) {
+              var $thisChk = $this ;
+              var $ipCheck = $thisChk.find('input[type=checkbox]');
+              var thisChecked = $ipCheck.prop("checked");
+              var $countTextbox = $thisChk.find('.select_num');
+              var $countText = parseInt($thisChk.find('.select_num').text());
+
+              if( $ipCheck.hasClass('checked') ){
+
+                  $ipCheck.removeClass('checked');
+
+                  $thisChk.removeClass('on');
+
+                  $ipCheck.prop("checked", false);
+
+                  totalCount --;
+
+                  if(totalCount < 0 ){
+                      totalCount = 0;
+                  }
+                  $countTextbox.text(A[$ipCheck.val()-1]);
+
+                  selectArray.splice($countText - 1,1);;
+
+                  var i;
+                  var j;
+                  for( i=0; i<totalCount; i++ ){
+                      j = i +1;
+                      selectArray[i].find('.select_num').text(j);
+                  }
+
+              }else{
+
+                  totalCount ++;
+
+
+                  $ipCheck.addClass('checked');
+
+                  $thisChk.addClass('on');
+
+                  $ipCheck.prop("checked", true);
+
+                  $countTextbox.text(totalCount);
+
+                  selectArray.push( $thisChk );
+
+
+              }
+              Tot = totalCount;
+          }
+      });
+    </script>
+  </body>
+</html>
