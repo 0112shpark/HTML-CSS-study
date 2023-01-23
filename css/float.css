@@ -1,0 +1,33 @@
+#pic {
+  float: left;
+}
+.first-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.second-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.first-box {
+  border: 1px solid black;
+}
+.second-box {
+  border: 1px solid black;
+}
+#pic2 {
+  float: right;
+}
+.inline {
+  color: white;
+}
+.red {
+  background-color: red;
+  float: left;
+}
+.blue {
+  background-color: blue;
+  float: left;
+}
