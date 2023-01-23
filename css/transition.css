@@ -1,0 +1,31 @@
+.float-box {
+  padding: 1rem;
+  margin: auto;
+  background-color: #ccc;
+  border: 1px solid black;
+}
+.float-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  float: left;
+  text-align: center;
+  transition-property: color, width, background-color;
+  transition-duration: 1s;
+}
+.box:hover {
+  background-color: black;
+  color: red;
+  width: 150px;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  float: left;
+}
