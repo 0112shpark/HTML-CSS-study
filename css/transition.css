@@ -15,8 +15,7 @@
   background-color: red;
   float: left;
   text-align: center;
-  transition-property: transform;
-  transition-duration: 1s;
+  transition: background-color 1s, width 1s, transform 1s;
 }
 .box:hover {
   background-color: black;
@@ -30,6 +29,9 @@
   background-color: blue;
   float: left;
 }
+fieldset .i {
+  font-size: 30px;
+}
 .loginbox {
   border: 1px solid black;
   width: 200px;
@@ -37,7 +39,7 @@
 button {
   transition: transform 1s;
 }
-button:hover {
+button[type="submit"]:active {
   transform: translatex(100px);
 }
 .container {

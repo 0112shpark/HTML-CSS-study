@@ -1,0 +1,27 @@
+@keyframes bgchange {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 500px;
+  }
+}
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: move, bgchange;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
