@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  font-family: "Nanum Pen Script", cursive;
+  width: 350px;
+  height: 400px;
+  transform: rotate(10deg);
+  background-color: #fff99f;
+  padding: 18px;
+  margin: 100px auto;
+}
+.container #title1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+p[id="title1"] ~ p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.second {
+  width: 304px;
+  height: 390px;
+  border: 1px solid black;
+  margin: 120px auto;
+  padding: 28px 38px;
+  font-family: "Roboto", sans-serif;
+}
+#google button[type="submit"] {
+  text-align: center;
+  width: 228px;
+  height: 44px;
+  font-size: 14px;
+  color: #504444;
+  font-weight: bold;
+}
+i {
+  color: red;
+}
+#or {
+  margin: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #504444;
+  font-weight: bold;
+}
+input {
+  background-color: #eaeaea;
+  height: 44px;
+  width: 228px;
+  margin: 12px 0;
+  padding: 10px;
+  border: 0px;
+}
+.log button[type="submit"] {
+  text-align: center;
+  width: 228px;
+  height: 44px;
+  margin-top: 12px;
+  margin-bottom: 27px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #373f3c;
+  font-weight: bold;
+}
+#forgot {
+  text-decoration: none;
+  font-size: 14px;
+  color: #2c3432;
+  text-align: center;
+  display: block;
+}
+#forgot:hover {
+  color: violet;
+}
