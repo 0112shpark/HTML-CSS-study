@@ -15,17 +15,59 @@
   background-color: red;
   float: left;
   text-align: center;
-  transition-property: color, width, background-color;
+  transition-property: transform;
   transition-duration: 1s;
 }
 .box:hover {
   background-color: black;
   color: red;
   width: 150px;
+  transform: translatex(20px);
 }
 .box2 {
   width: 100px;
   height: 100px;
   background-color: blue;
   float: left;
+}
+.loginbox {
+  border: 1px solid black;
+  width: 200px;
+}
+button {
+  transition: transform 1s;
+}
+button:hover {
+  transform: translatex(100px);
+}
+.container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  border: 1px solid black;
+}
+.container .bar {
+  margin: 10px;
+  width: 100px;
+  background-color: red;
+  transition-property: width;
+  transition-duration: 3s;
+}
+.container:hover .bar {
+  width: 200px;
+}
+.bar:nth-child(1) {
+  transition-timing-function: linear;
+}
+.bar:nth-child(2) {
+  transition-timing-function: ease;
+}
+.bar:nth-child(3) {
+  transition-timing-function: ease-in;
+}
+.bar:nth-child(4) {
+  transition-timing-function: ease-out;
+}
+.bar:nth-child(5) {
+  transition-timing-function: ease-in-out;
 }
