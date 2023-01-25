@@ -19,13 +19,21 @@ span {
 }
 .flex-item {
   text-align: center;
-  width: 100px;
+  width: 50px;
   color: white;
   background-color: red;
   margin: 5px auto;
   border-radius: 30%;
 }
-.flex-item:nth-child(2n) {
+.flex-item1 {
+  text-align: center;
+  width: 50px;
+  color: white;
+  background-color: red;
+  border-radius: 30%;
+}
+.flex-item:nth-child(2n),
+.flex-item1:nth-child(2n) {
   background-color: blue;
 }
 .flex-container1 {
@@ -35,16 +43,73 @@ span {
   border: 1px solid black;
   padding: 20px;
   margin: 100px auto;
-}
-.flex-item {
-  text-align: center;
-  width: 100px;
-  color: white;
-  background-color: red;
-  margin: 5px auto;
-  border-radius: 30%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-.flex-item:nth-child(2n) {
-  background-color: blue;
+.flex-container2 {
+  width: 300px;
+  height: 100px;
+  background-color: gray;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-start {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  border: 1px solid black;
+  margin: 100px auto;
+  display: inline-flex;
+  justify-content: flex-start;
+}
+.flex-end {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  border: 1px solid black;
+  margin: 100px auto;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.center {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  border: 1px solid black;
+  margin: 100px auto;
+  display: inline-flex;
+  justify-content: center;
+}
+.space-between {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  border: 1px solid black;
+  margin: 100px auto;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.space-around {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  border: 1px solid black;
+  margin: 100px auto;
+  display: inline-flex;
+  justify-content: space-around;
+}
+.space-evenly {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  border: 1px solid black;
+  margin: 100px auto;
+  display: inline-flex;
+  justify-content: space-evenly;
 }
