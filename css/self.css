@@ -19,6 +19,7 @@ span {
   border: 1px solid #a2a9b1;
   padding: 6px 5px 12px;
   margin: 100px auto;
+  font-size: 13px;
 }
 
 h1 {
@@ -28,7 +29,6 @@ h1 {
 
 .list ol li {
   list-style: none;
-  font-size: 13px;
 }
 
 .list ol li a {
