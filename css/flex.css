@@ -16,6 +16,7 @@ span {
   border: 1px solid black;
   padding: 20px;
   margin: 100px auto;
+  display: flex;
 }
 .flex-item {
   text-align: center;
